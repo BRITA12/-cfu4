@@ -1,0 +1,21 @@
+#9/24/24
+#1-2period
+#Brithanysanchez
+#cfu#4
+import math
+a = float(input("coeffient A"))
+b = float(input("coefficient B"))
+c = float(input("coefficient C"))
+# aX**2 + bX + c = 0
+# X1 = (-b + √((b**2) - 4*a*c))/2a
+# x2 = (-b - √((b**2) - 4*a*c))/2a
+# X = (-b(+or-)√part4)/part1
+part1 = 2*a
+part2 = 4*a*c
+part3 = b**2
+part4 = part3-part2
+part5 = math.sqrt(part4)
+x1 =(-b - part5) / part1
+x2 = (-b + part5) / part1
+
+print(x1, x2)
